@@ -46,7 +46,7 @@ filetype plugin on
 set t_Co=256
 set background=dark
 syntax on
-colorscheme one
+let g:airline_theme='one'
 
 set number
 set relativenumber 
