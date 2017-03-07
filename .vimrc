@@ -46,7 +46,8 @@ filetype plugin on
 set t_Co=256
 set background=dark
 syntax on
-let g:airline_theme='one'
+" use an airline theme
+"let g:airline_theme='<theme>'
 
 set number
 set relativenumber 
@@ -65,3 +66,10 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 set laststatus=2
+
+" easy navigation between splits
+" So instead of ctrl-w then j, it’s just ctrl-j
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
